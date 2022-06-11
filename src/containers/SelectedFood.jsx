@@ -6,15 +6,16 @@ import FoodContext from "../context/Food/FoodContext";
 const SelectedFood = () => {
   const { foodData, getFood } = useContext(FoodContext);
 
-  const { restaurant, food, id } = useParams();
+  const { restaurant, id } = useParams();
 
   const pathParams = restaurant.replace(/\s/g, "%20");
 
   useEffect(() => {
     getFood(pathParams);
   }, []);
-
   const data = foodData.filter((food) => food.id == id);
+
+  console.log(data);
 
   return (
     <div>

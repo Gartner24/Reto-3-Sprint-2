@@ -29,7 +29,7 @@ const Profile = () => {
   useEffect(() => {
     getUsers();
     setProfile(users.find((user) => user.id == id));
-    setAdminCheck(users.find((user) => user.id == id).admin);
+    setAdminCheck(users.find((user) => user.id == id));
   }, [id]);
 
   return (

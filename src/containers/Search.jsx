@@ -25,8 +25,6 @@ const Search = () => {
     return item.name.toLowerCase().includes(search.toLowerCase());
   });
 
-  const onClick = (e) => {};
-
   return (
     <div className="d-flex flex-wrap justify-content-start">
       <TextField

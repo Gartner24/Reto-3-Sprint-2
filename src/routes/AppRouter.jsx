@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Home from "../containers/Home";
@@ -12,7 +12,6 @@ import RestaurantState from "../context/Restaurants/RestaurantState";
 import FoodID from "../containers/FoodID";
 import FoodState from "../context/Food/FoodState";
 import SelectedFood from "../containers/SelectedFood";
-import UserContext from "../context/User/UserContext";
 import Admin from "../containers/Admin";
 
 const AppRouter = () => {
